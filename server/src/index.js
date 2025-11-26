@@ -28,8 +28,6 @@ app.get("/", (req, res) => {
   res.json({ status: "ok", message: "TicTacTournament API" });
 });
 
-
-
 app.use("/api/auth", authRoutes);
 app.use("/api/user", profileRoutes);
 app.use("/api/game", gameRoutes);
